@@ -1,0 +1,2 @@
+set /p x="Enter ip "
+ping -n 1 %x% > nul | find /i "TTL=" && (echo "%x% is available" >> C:\Users\Pavlovska\Desktop\for_ekz\step\for_ip.txt) || ((echo "%x% is not available" >> C:\Users\Pavlovska\Desktop\for_ekz\step\for_ip.txt)) & notepad C:\Users\Pavlovska\Desktop\for_ekz\step\for_ip.txt 
