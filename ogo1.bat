@@ -1,0 +1,2 @@
+echo %1
+(ping -n 1 %1 | find /i "TTL=" && echo "%1 is available" >> e:\Desktop\GitExam\step\result.txt) || echo "%1 is not available" >> e:\Desktop\GitExam\step\result.txt & notepad e:\Desktop\GitExam\step\result.txt
