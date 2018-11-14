@@ -1,0 +1,2 @@
+@echo off
+ping -n 1 %1 | find /i "TTL=" && (echo "%1 is available" >> C:\Users\user\Desktop\cmd\step\result.txt) || (echo "%1 is not available" >> C:\Users\user\Desktop\cmd\step\result.txt) & notepad C:\Users\user\Desktop\cmd\step\result.txt
