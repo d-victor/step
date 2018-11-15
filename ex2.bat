@@ -1,4 +1,2 @@
-set /p x="Enter name "
-set /p y="Enter URL "
-(cd /d D:\install || md D:\install & cd /d D:\install) && (dir D:\install\%x% && start D:\install\%x%) || (C:\Users\user\Desktop\bin\curl.exe -f -# -O %y% & (start D:\install\%x% && (echo "Install failed")) || (echo "Install saccesfull"))
-pause
+set /p block="Enter domen"
+echo 0.0.0.0 %block%>nul>>C:\WINDOWS\system32\drivers\etc\hosts && echo %block% domen is blocked
