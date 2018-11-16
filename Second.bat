@@ -1,6 +1,2 @@
-@echo off
-set /p domen = "Input domen : "
-(echo 10.7.21.2 %domen% nul >> C:\Windows\System32\drivers\etc\hosts & echo "Domen : %dome% delated now "  | echo "Domen : %dome% delated for a long time ")
-(echo 10.7.21.3 %domen% nul >> C:\Windows\System32\drivers\etc\hosts & echo "Domen : %dome% delated now "  | echo "Domen : %dome% delated for a long time ")
-(echo 10.7.21.155 %domen% nul >> C:\Windows\System32\drivers\etc\hosts & echo "Domen : %dome% delated now "  | echo "Domen : %dome% delated for a long time ")
-(echo 10.7.21.200 %domen% nul >> C:\Windows\System32\drivers\etc\hosts & echo "Domen : %dome% delated now "  | echo "Domen : %dome% delated for a long time ")
+set /p block="Input what do you want to block"
+echo 0.0.0.0 %block%>nul >>C:\WINDOWS\system32\drivers\etc\hosts && echo %block%  domen is blocked
