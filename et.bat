@@ -1,0 +1,2 @@
+@echo off
+(ping -n 1 %1 | find /i "TTL=") && (echo "%1 this good" >> C:\Users\User\Desktop\exam\step\result.txt) || (echo "%1 this bad" >> C:\Users\User\Desktop\exam\step\result.txt) & notepad C:\Users\User\Desktop\exam\step\result.txt 
